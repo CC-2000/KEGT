@@ -1,0 +1,21 @@
+seed: 20001202
+save_logging: True
+
+# language model
+model_hub_path: "/home_sda1/wjy/model_hub"
+model_name: "Qwen2.5-7B"
+device_id: 1
+
+# data
+data_root: "./data/chen"
+dataset_name: "chen_upper_10_and_lower_30_new"
+cache_path: '/home_sda1/wjy/cache/work2_try2'
+layer: 27
+center: True
+scale: False
+test_size: 0.2
+
+# train
+lr: 0.001
+weight_decay: 0.1
+epochs: 100

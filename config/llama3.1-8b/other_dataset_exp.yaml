@@ -1,0 +1,21 @@
+seed: 20001202
+save_logging: True
+
+# language model
+model_hub_path: "/home_sda1/wjy/model_hub"
+model_name: "llama3.1-8b"
+device_id: 1
+
+# data
+data_root: "./data/Amazon"
+dataset_name: "Amazon"
+cache_path: '/home_sda1/wjy/cache/work2_try2'
+layer: 14
+center: True
+scale: False
+test_size: 0.2
+
+# train
+lr: 0.001
+weight_decay: 0.1
+epochs: 100

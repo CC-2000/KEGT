@@ -1,0 +1,18 @@
+seed: 20001202
+save_logging: True
+
+# language model
+model_hub_path: "/home_sda1/wjy/model_hub"
+model_name: "opt-1.3b"
+device_id: 1
+
+# data
+data_root: "./data/chen"
+dataset_name: "chen_upper_10_and_lower_30_new"
+cache_path: '/home_sda1/wjy/cache/work2_try2'
+
+test_size: 0.2
+
+# train
+prompt_template: 'For the prompt "{}", will the token "{}" appear in the generated text for the prompt above?'
+next_k: 10
